@@ -4,25 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A First App</title>
-
-    <!-- Mi hoja de estilos -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="app">
+    <div id="app">
       <div>
         <label for="goal">Goal</label>
-        <input type="text" id="goal" v-model="enteredValue" />
-        <button v-on:click="addGoal">Add Goal</button>
+        <input type="text" id="goal" />
+        <button>Add Goal</button>
       </div>
       <ul>
-        <!-- renderizar con vue desde html -->
-        <li v-for="goal in goals">{{ goal }}</li>
+        <li>Test</li>
       </ul>
-    </main>
-
-    <!-- Mi archivo de JS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./main.js"></script>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
